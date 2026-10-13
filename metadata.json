@@ -1,0 +1,6 @@
+{
+  "name": "Dayline",
+  "description": "Voice-first wellness journal and daily habit tracker powered by Qdrant vector memory and AI insights.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: habitmind
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: LYZR_API_KEY
+        sync: false
+      - key: LYZR_AGENT_ID
+        sync: false
+      - key: LYZR_USER_ID
+        sync: false
